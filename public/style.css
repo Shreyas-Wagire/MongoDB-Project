@@ -1,0 +1,133 @@
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ECE5DD; /* WhatsApp chat background */
+    color: #111;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header styling */
+h3 {
+    text-align: center;
+    color: #075E54; /* WhatsApp header green */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* New Chat Button Styling */
+.new-chat-form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.new-chat-btn {
+    padding: 10px 20px;
+    background-color: #25D366; /* WhatsApp green */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.new-chat-btn:hover {
+    background-color: #128C7E; /* Darker green on hover */
+}
+
+/* Chat container */
+.chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Individual chat styling */
+.chat {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    border-left: 5px solid #25D366;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.chat:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Sender styling */
+.from {
+    font-size: 1.2em;
+    color: #128C7E; /* WhatsApp dark green */
+    margin: 0;
+}
+
+/* Message styling */
+.msg {
+    font-size: 1em;
+    color: #333;
+    margin: 10px 0;
+    word-wrap: break-word;
+}
+
+/* Receiver styling */
+.to {
+    font-size: 0.9em;
+    color: #555;
+    text-align: right;
+    font-style: italic;
+}
+
+/* Timestamp styling */
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    color: #888;
+}
+
+/* Edit Button Styling */
+.edit-btn {
+    padding: 5px 10px;
+    background-color: #128C7E; /* WhatsApp green */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.edit-btn:hover {
+    background-color: #075E54; /* Darker green on hover */
+}
+
+/* Align Edit Button */
+.edit-form {
+    margin-top: 10px;
+    text-align: right;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .chat-container {
+        padding: 10px;
+    }
+    .chat {
+        padding: 10px;
+    }
+    .new-chat-btn {
+        width: 100%;
+        padding: 15px;
+    }
+}
